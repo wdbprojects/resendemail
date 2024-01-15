@@ -36,7 +36,7 @@ const ReactHookForm = () => {
   type Inputs = z.infer<typeof FormDataSchema>;
 
   const onSubmit = async (data: z.infer<typeof FormDataSchema>) => {
-    const result = await sendEmail(data);
+    const result: any = await sendEmail(data);
     console.log(result);
 
     if (result?.data) {
