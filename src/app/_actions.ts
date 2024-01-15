@@ -47,7 +47,7 @@ export const sendEmail = async (formData: ContactFormInputs) => {
   let data;
   try {
     data = await resend.emails.send({
-      from: "WDB Portfolio <onboarding@resend.dev>",
+      from: "WDB Portfolio <onboarding@resend.com>",
       to: "ronyortizop@gmail.com",
       subject: `Email from ${username} sent from WDB Portfolio`,
       reply_to: email as string,

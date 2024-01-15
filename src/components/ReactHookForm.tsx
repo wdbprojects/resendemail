@@ -37,7 +37,6 @@ const ReactHookForm = () => {
 
   const onSubmit = async (data: z.infer<typeof FormDataSchema>) => {
     const result: any = await sendEmail(data);
-    console.log(result);
 
     if (result?.data) {
       toast.success("Email sent successfully!");
